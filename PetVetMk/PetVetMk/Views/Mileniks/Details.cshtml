@@ -1,0 +1,66 @@
+﻿@model PetVetMk.Models.Milenik
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Milenik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikSopstvenik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikSopstvenik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikDataRaganje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikDataRaganje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikVid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikVid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikRasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikRasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikBoja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikBoja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

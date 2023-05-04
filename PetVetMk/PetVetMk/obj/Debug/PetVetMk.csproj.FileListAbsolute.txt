@@ -1,0 +1,268 @@
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.dll.config
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.pdb
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.exe
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.exe.config
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.rsp
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.exe
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.exe.config
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.rsp
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.AppContext.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Console.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.Compression.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Net.Http.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Net.Sockets.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.ValueTuple.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XPath.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.exe
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.exe.config
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.rsp
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\VBCSCompiler.exe
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Antlr3.Runtime.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.SqlServer.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Newtonsoft.Json.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Owin.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Helpers.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Mvc.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Optimization.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Razor.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Deployment.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Razor.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\WebGrease.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Helpers.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Mvc.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Optimization.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Razor.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Deployment.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Razor.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Newtonsoft.Json.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Antlr3.Runtime.pdb
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.SqlServer.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.AssemblyReference.cache
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.CoreCompileInputs.cache
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.CopyComplete
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.pdb
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.GenerateResource.cache
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.ListaDoktoriMilenici.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial1.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial2.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial3.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial4.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial5.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial6.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial7.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial8.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial9.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.Mvc.dll
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.Mvc.xml
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial10.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial11.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.rating.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.changeuseridtostring.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.registerform.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.role.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.odberiuloga.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.IsDoctor.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.celbroj.resources
+C:\Users\filip\Desktop\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.korisnickoime.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.dll.config
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PetVetMk.pdb
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.exe
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.exe.config
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csc.rsp
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.exe
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.exe.config
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\csi.rsp
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.AppContext.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Console.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.Compression.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Net.Http.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Net.Sockets.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.ValueTuple.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XPath.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.exe
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.exe.config
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\vbc.rsp
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\VBCSCompiler.exe
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Antlr3.Runtime.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.SqlServer.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Newtonsoft.Json.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Owin.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.Mvc.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Helpers.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Mvc.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Optimization.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Razor.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Razor.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\WebGrease.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\PagedList.Mvc.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Helpers.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Mvc.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Optimization.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.Razor.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\System.Web.WebPages.Razor.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Newtonsoft.Json.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Antlr3.Runtime.pdb
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\EntityFramework.SqlServer.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.AssemblyReference.cache
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.ListaDoktoriMilenici.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial1.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial2.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial3.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial4.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial5.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial6.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial7.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial8.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial9.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial10.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.initial11.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.rating.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.changeuseridtostring.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.registerform.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.role.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.odberiuloga.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.IsDoctor.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.celbroj.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.Migrations.korisnickoime.resources
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.GenerateResource.cache
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.CoreCompileInputs.cache
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.csproj.CopyComplete
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.dll
+C:\Users\trajk\Desktop\FINKI\IV Semestar (Leten 2021-2022)\Internet Tehnologii\PetVekMk\PetVetMk\PetVetMk\obj\Debug\PetVetMk.pdb

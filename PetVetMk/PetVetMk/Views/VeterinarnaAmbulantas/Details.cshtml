@@ -1,0 +1,649 @@
+﻿@model PetVetMk.Models.VeterinarnaAmbulanta
+@using PetVetMk.Models
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = Model.VetAmbulantaIme;
+    ApplicationDbContext db = new ApplicationDbContext();
+    string UserId = User.Identity.GetUserId();
+    var logiranKorisnik = db.Users.Where(m => m.Id == UserId).FirstOrDefault();
+    var user = db.Users.Find(User.Identity.GetUserId());
+    var rejtingzi = db.VeterinarnaAmbulantaRatings.Where(v => v.ambulantaId == Model.Id).ToList();
+    var vkupenRejting = 0;
+    var brojRejting = 0;
+    for (var i=0; i<rejtingzi.Count(); i++)
+    {
+        vkupenRejting += rejtingzi[i].rating;
+        brojRejting++;
+    }
+
+    //VeterinarnaAmbulantaRating ambulantaRating = db.VeterinarnaAmbulantaRatings.Where(v => v.ambulantaId == Model.Id && v.korisnikId == user.Id).Single();
+}
+
+<div style="display:flex; justify-content: space-between; height: 70px; padding-top: 20px;">
+    <div style="display: inline-flex;">
+        <div>
+            <h1>@Html.DisplayFor(model => model.VetAmbulantaIme)</h1>
+        </div>
+        <div style="display: inline-flex; margin-left:25px; margin-top:6px;">
+            @{
+                float rejting = (float)vkupenRejting / brojRejting;
+            }
+            <h2>Оценка: &nbsp;</h2> 
+                @{
+                    if (brojRejting == 0)
+                    {
+                        <h2>Нема внесено оценка</h2>
+                    }
+                    else
+                    {
+                        <h2 class="rating">@string.Format(" {0:n2}", rejting)</h2>
+                    }
+                }
+        </div>
+        @if (User.IsInRole("Korisnik")) {
+        <div style="margin: auto; margin-left: 15px;">
+            @if (db.VeterinarnaAmbulantaRatings.Where(v => v.ambulantaId == Model.Id && v.korisnikId == user.Id).Count() == 0)
+            {
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="0" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+            }
+            else
+            {
+                VeterinarnaAmbulantaRating ambulantaRating = db.VeterinarnaAmbulantaRatings.Where(v => v.ambulantaId == Model.Id && v.korisnikId == user.Id).Single();
+                if (ambulantaRating.rating == 1)
+                {
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="1" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                }
+                else if (ambulantaRating.rating == 2)
+                {
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2"ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="2" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                }
+                else if (ambulantaRating.rating == 3)
+                {
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="3" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5" style="display: none;"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                }
+                else if (ambulantaRating.rating == 4)
+                {
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1" style="display: none"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2" style="display: none"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3" style="display: none"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4" style="display: none"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="4" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5" style="display: none"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                }
+                else
+                {
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="addRating1" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="1" class="YellowStar1"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="addRating2" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="2" class="YellowStar2"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="addRating3" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="3" class="YellowStar3"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="addRating4" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="4" class="YellowStar4"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="addRating5" style="display: none;"><img src="~/Content/StarGray.png" style="height: 30px; width: 30px;" /></button>
+                    <button vkupenRejting="@vkupenRejting" brojRejting="@brojRejting" previousRating="5" ambulantaId="@Model.Id" userId="@user.Id" rating="5" class="YellowStar5"><img src="~/Content/YellowStar.png" style="height: 30px; width: 30px;" /></button>
+                }
+                }
+            </div>
+         }
+        
+    </div>
+
+    <div style="display: inline-flex; padding-top: 5px;">
+        @{
+            if (logiranKorisnik != null)
+            {
+                if (logiranKorisnik.AmbulantaId == Model.Id)
+                {
+                    <p style="margin-right: 10px;"> @Html.ActionLink("Измени", "Edit", new { id = Model.Id }, new { @class = "btn btn-success" })</p>
+                }
+            }
+
+        }
+        <p>@Html.ActionLink("Назад кон листата на ветеринарни амбуланти", "Index", new { id = Model.Id }, new { @class = "btn btn-secondary" })</p>
+    </div>
+
+</div>
+
+<body>
+    <hr />
+    <div style="display: flex; justify-content:space-between">
+        <div>
+            <img src="@Html.DisplayFor(model => model.VetAmbulantaLogoUrl)" class="border" style="width:625px; max-height: 500px;" />
+
+            <div style="display:flex; justify-content: space-between; padding-top: 15px;">
+                <div>
+                    <div style="display:inline-flex">
+                        <p style="font-size: 20px; font-weight: bold;">@Html.DisplayNameFor(model => model.VetAmbulantaOpstina) &nbsp;</p>
+                        <p style="font-size: 20px;"> @Html.DisplayFor(model => model.VetAmbulantaOpstina)</p>
+                    </div>
+                    <br />
+                    <div style="display:inline-flex">
+                        <p style="font-size: 20px; font-weight: bold;">@Html.DisplayNameFor(model => model.VetAmbulantaAdresa) &nbsp;</p>
+                        <p style="font-size: 20px;"> @Html.DisplayFor(model => model.VetAmbulantaAdresa)</p>
+                    </div>
+                </div>
+
+                <div style="display: inline-grid;">
+                    <div style="display:inline-flex">
+                        <p style="font-size: 20px; font-weight: bold;">@Html.DisplayNameFor(model => model.VetAmbulantaTelBroj) &nbsp;</p>
+                        <p style="font-size: 20px"> @Html.DisplayFor(model => model.VetAmbulantaTelBroj)</p>
+                    </div>
+
+                    <div style="display:inline-flex">
+                        <p style="font-size: 20px; font-weight: bold;">@Html.DisplayNameFor(model => model.VetAmbulantaEmail) &nbsp;</p>
+                        <p style="font-size: 20px;"> @Html.DisplayFor(model => model.VetAmbulantaEmail)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:inline-flex">
+                <p style="font-size: 20px; font-weight: bold;">@Html.DisplayNameFor(model => model.VetAmbulantaRabotnoVreme) &nbsp;</p>
+                <p style="font-size: 20px;"> @Html.DisplayFor(model => model.VetAmbulantaRabotnoVreme)</p>
+            </div>
+        </div>
+
+        <div style="width: 625px; text-align: justify;">
+            @* @Html.DisplayFor(model => model.VetAmbDolgOpis) *@
+            <h3 style="text-align: center;">Вработени</h3>
+            @*@foreach (var doctor in Model.vetdoktori)
+        {
+            <p>
+                <a class="btn btn-secondary vraboteni" data-bs-toggle="collapse" href="#a-@doctor.Id" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">@doctor.DoktorImePrezime</a>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="a-@doctor.Id" style="padding-bottom: 15px;">
+                        <div class="card card-body bg-secondary vrabotenitext">
+                            <p>Роден во @doctor.DoktorOpstina</p>
+                            <p>Телефон @doctor.DoktorTelBroj</p>
+                            <p>Емаил @doctor.DoktorEmail</p>
+                            <p><a class = "btn btn-secondary w-100" href="/VeterinarnaAmbulantas/RemoveDoctor/@doctor.Id?ambulantaId=@Model.Id" >Избриши ветеринарен доктор</a></p>
+                            <p><a class="delete-doctor btn btn-secondary w-100" doctor-id="@doctor.Id" ambulanta-id="@Model.Id">Избриши ветеринарен доктор</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }*@
+
+            @foreach (var doctor in db.Users)
+            {
+                if (doctor.AmbulantaId == Model.Id && doctor.IsDoctor)
+                {
+                    <p>
+                        <a class="btn btn-secondary vraboteni" data-bs-toggle="collapse" href="#a-@doctor.Id" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">@doctor.ImePrezime</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="a-@doctor.Id" style="padding-bottom: 15px;">
+                                <div class="card card-body bg-secondary vrabotenitext">
+                                    <p>Роден/а во @doctor.Opstina</p>
+                                    <p>Емаил @doctor.Email</p>
+                                    <p>Телефон @doctor.TelBroj</p>
+                                    @*<p><a class="btn btn-secondary w-100" href="/VeterinarnaAmbulantas/RemoveDoctor/@doctor.Id?ambulantaId=@Model.Id">Избриши ветеринарен доктор</a></p>*@
+                                    @*<p><a class="delete-doctor btn btn-secondary w-100" doctor-id="@doctor.Id" ambulanta-id="@Model.Id">Избриши ветеринарен доктор</a></p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+            @if (User.IsInRole("Administrator"))
+            {
+                <p style="font-variant: small-caps">@Html.ActionLink("Внеси ветеринарен доктор", "InsertDoctor", new { Controller = "Account", id = Model.Id }, new { @class = "btn btn-outline-secondary w-100" })</p>
+            }
+        </div>
+
+    </div>
+
+    @{
+        if (logiranKorisnik != null)
+        {
+            if (logiranKorisnik.AmbulantaId == Model.Id)
+            {
+                <p class="text-end">@Html.ActionLink("Внеси миленик", "InsertNewPet", new { id = Model.Id }, new { @class = "btn btn-outline-secondary w-25" })</p>
+
+                <table class="table table-hover table-light table-striped" style="margin-top: 10px;" id="tabelamilenici">
+                    <thead>
+                        <tr>
+                            <th scope="col">Име</th>
+                            <th scope="col">Сопственик </th>
+                            <th scope="col">Дата раѓање</th>
+                            <th scope="col">Вид</th>
+                            <th scope="col">Раса</th>
+                            <th scope="col">Боја</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var milenik in Model.milenici)
+                        {
+                            <tr>
+                                <td class="align-middle">@milenik.MilenikIme</td>
+                                <td class="align-middle">@milenik.MilenikSopstvenik </td>
+                                <td class="align-middle">@milenik.MilenikDataRaganje</td>
+                                <td class="align-middle">@milenik.MilenikVid</td>
+                                <td class="align-middle">@milenik.MilenikRasa</td>
+                                <td class="align-middle">@milenik.MilenikBoja</td>
+                                @* <td><a style="font-size: x-large; color:red;" class="text-decoration-none fw-bold" href="/VeterinarnaAmbulantas/RemovePet/@milenik.Id?ambulantaId=@Model.Id">&times;</a></td>*@
+                                <td><a style="font-size: x-large; color:red;" class="text-decoration-none fw-bold delete-pet" pet-id="@milenik.Id" ambulanta-id="@Model.Id">&times;</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        }
+
+    }
+
+</body>
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .vraboteni {
+        width: 625px;
+        color: white;
+        text-align: center;
+    }
+
+    .vrabotenitext {
+        color: white;
+        text-align: center;
+    }
+
+    .delete-pet:hover {
+        cursor: pointer;
+    }
+
+    .close {
+        display: none !important;
+    }
+
+    .modal-content {
+        background-color: lightgray;
+    }
+
+    .modal-footer {
+        border-top: 1px solid black;
+    }
+    button{
+        border: none;
+    }
+</style>
+
+@section Scripts
+ {
+    <script>
+        $(document).ready(function () {
+            $("#tabelamilenici").DataTable({
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Не е внесен ниту еден миленик",
+                    "info": "Прикажани се од _START_. до _END_. од вкупно _TOTAL_ миленици",
+                    "infoEmpty": "Прикажани се од _START_. до _END_. од вкупно _TOTAL_ миленици",
+                    "infoFiltered": "(филтрирани од _MAX_ миленици)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Прикажани се _MENU_ миленици",
+                    "loadingRecords": "Се вчитуваат...",
+                    "processing": "",
+                    "search": "Пребарај миленици:",
+                    "zeroRecords": "Не се пронајдени миленици",
+                    "paginate": {
+                        "first": "Прва",
+                        "last": "Последна",
+                        "next": "Следна",
+                        "previous": "Претходна"
+                    },
+                    "aria": {
+                        "sortAscending": ": подреди ги по растечки редослед",
+                        "sortDescending": ":  подреди ги по опаѓачки редослед"
+                    }
+                }
+            });
+
+            $(".delete-doctor").on("click", function () {
+                var button = $(this);
+                bootbox.confirm("Дали сте сигурни дека сакате да го избришете ветеринарниот доктор?", function (result) {
+                    console.log(result)
+                    if (result) {
+                        $.ajax({
+                            url: "/VeterinarnaAmbulantas/RemoveDoctor/" + button.attr("doctor-id") + "?ambulantaId=" + button.attr("ambulanta-id"),
+                            method: "GET",
+                            success: function () {
+
+                            }
+                        });
+                        $(document).ajaxStop(function () {
+                            window.location.reload();
+                        });
+                    }
+                });
+            });
+
+            $(".delete-pet").on("click", function () {
+                var button = $(this);
+                bootbox.confirm("Дали сте сигурни дека сакате да го избришете миленикот?", function (result) {
+                    console.log(result)
+                    if (result) {
+                        $.ajax({
+                            url: "/VeterinarnaAmbulantas/RemovePet/" + button.attr("pet-id") + "?ambulantaId=" + button.attr("ambulanta-id"),
+                            method: "GET",
+                            success: function () {
+
+                            }
+                        });
+                        $(document).ajaxStop(function () {
+                            window.location.reload();
+                        });
+                    }
+                });
+            });
+
+            $("div .YellowStar1").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").hide();
+                $(".addRating2").show();
+                $(".YellowStar3").hide();
+                $(".addRating3").show();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .YellowStar2").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").hide();
+                $(".addRating3").show();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .YellowStar3").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .YellowStar4").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").show();
+                $(".addRating4").hide();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .YellowStar5").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").show();
+                $(".addRating4").hide();
+                $(".YellowStar5").show();
+                $(".addRating5").hide();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .addRating1").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").hide();
+                $(".addRating2").show();
+                $(".YellowStar3").hide();
+                $(".addRating3").show();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .addRating2").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").hide();
+                $(".addRating3").show();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .addRating3").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").hide();
+                $(".addRating4").show();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .addRating4").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").show();
+                $(".addRating4").hide();
+                $(".YellowStar5").hide();
+                $(".addRating5").show();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+
+            $("div .addRating5").on("click", function () {
+                var button = $(this);
+                console.log("clicked");
+                $(".YellowStar1").show();
+                $(".addRating1").hide();
+                $(".YellowStar2").show();
+                $(".addRating2").hide();
+                $(".YellowStar3").show();
+                $(".addRating3").hide();
+                $(".YellowStar4").show();
+                $(".addRating4").hide();
+                $(".YellowStar5").show();
+                $(".addRating5").hide();
+
+                $.ajax({
+                    url: "/VeterinarnaAmbulantas/AddRating/" + button.attr("ambulantaId") + "?userId=" + button.attr("userId") + "&rating=" + button.attr("rating"),
+                    method: "GET",
+                    success: function () {
+
+                    }
+                });
+                $(document).ajaxStop(function () {
+                    window.location.reload();
+                });
+            });
+        });
+    </script>
+}

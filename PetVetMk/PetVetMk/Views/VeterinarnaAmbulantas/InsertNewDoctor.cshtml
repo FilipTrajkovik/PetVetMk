@@ -1,0 +1,279 @@
+﻿@model PetVetMk.Models.VeterinarenDoktor
+@{
+    ViewBag.Title = "InsertNewDoctor";
+}
+
+<h3 class="createnaslov">Внеси ги податоците за ветеринарниот доктор</h3>
+
+<div>
+
+</div>
+
+@*@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<div class="izmenidoktordiv">
+    <div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DoktorImePrezime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DoktorImePrezime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DoktorImePrezime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DoktorOpstina, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style=" background-color: white;">
+                @Html.DropDownListFor(model => model.DoktorOpstina, new List<SelectListItem>
+               {
+                    new SelectListItem() {Text = "Аеродром", Value = "Аеродром"},
+                    new SelectListItem() {Text = "Арачиново", Value = "Арачиново"},
+                    new SelectListItem() {Text = "Берово", Value = "Берово"},
+                    new SelectListItem() {Text = "Битола", Value = "Битола"},
+                    new SelectListItem() {Text = "Богданци", Value = "Богданци"},
+                    new SelectListItem() {Text = "Боговиње", Value = "Боговиње"},
+                    new SelectListItem() {Text = "Босилово", Value = "Босилово"},
+                    new SelectListItem() {Text = "Брвеница", Value = "Брвеница"},
+                    new SelectListItem() {Text = "Бутел", Value = "Бутел"},
+                    new SelectListItem() {Text = "Валандово", Value = "Валандово"},
+                    new SelectListItem() {Text = "Василево", Value = "Василево"},
+                    new SelectListItem() {Text = "Вевчани", Value = "Вевчани"},
+                    new SelectListItem() {Text = "Велес", Value = "Велес"},
+                    new SelectListItem() {Text = "Виница", Value = "Виница"},
+                    new SelectListItem() {Text = "Врапчиште", Value = "Врапчиште"},
+                    new SelectListItem() {Text = "Гази Баба", Value = "Гази Баба"},
+                    new SelectListItem() {Text = "Гевгелија", Value = "Гевгелија"},
+                    new SelectListItem() {Text = "Ѓорче Петров", Value = "Ѓорче Петров"},
+                    new SelectListItem() {Text = "Гостивар", Value = "Гостивар"},
+                    new SelectListItem() {Text = "Градско", Value = "Градско"},
+                    new SelectListItem() {Text = "Дебар", Value = "Дебар"},
+                    new SelectListItem() {Text = "Дебрца", Value = "Дебрца"},
+                    new SelectListItem() {Text = "Делчево", Value = "Делчево"},
+                    new SelectListItem() {Text = "Демир Капија", Value = "Демир Капија"},
+                    new SelectListItem() {Text = "Демир Хисар", Value = "Демир Хисар"},
+                    new SelectListItem() {Text = "Дојран", Value = "Дојран"},
+                    new SelectListItem() {Text = "Долнени", Value = "Долнени"},
+                    new SelectListItem() {Text = "Желино", Value = "Желино"},
+                    new SelectListItem() {Text = "Зелениково", Value = "Зелениково"},
+                    new SelectListItem() {Text = "Зрновци", Value = "Зрновци"},
+                    new SelectListItem() {Text = "Илинден", Value = "Илинден"},
+                    new SelectListItem() {Text = "Јегуновце", Value = "Јегуновце"},
+                    new SelectListItem() {Text = "Кавадарци", Value = "Кавадарци"},
+                    new SelectListItem() {Text = "Карбинци", Value = "Карбинци"},
+                    new SelectListItem() {Text = "Карпош", Value = "Карпош"},
+                    new SelectListItem() {Text = "Кисела Вода", Value = "Кисела Вода"},
+                    new SelectListItem() {Text = "Кичево", Value = "Кичево"},
+                    new SelectListItem() {Text = "Конче", Value = "Конче"},
+                    new SelectListItem() {Text = "Кочани", Value = "Кочани"},
+                    new SelectListItem() {Text = "Кратово", Value = "Кратово"},
+                    new SelectListItem() {Text = "Крива Паланка", Value = "Крива Паланка"},
+                    new SelectListItem() {Text = "Кривогаштани", Value = "Кривогаштани"},
+                    new SelectListItem() {Text = "Крушево", Value = "Крушево"},
+                    new SelectListItem() {Text = "Куманово", Value = "Куманово"},
+                    new SelectListItem() {Text = "Липково", Value = "Липково"},
+                    new SelectListItem() {Text = "Лозово", Value = "Лозово"},
+                    new SelectListItem() {Text = "Маврово и Ростуше", Value = "Маврово и Ростуше"},
+                    new SelectListItem() {Text = "Македонска Каменица", Value = "Македонска Каменица"},
+                    new SelectListItem() {Text = "Македонски Брод", Value = "Македонски Брод"},
+                    new SelectListItem() {Text = "Могила", Value = "Могила"},
+                    new SelectListItem() {Text = "Неготино", Value = "Неготино"},
+                    new SelectListItem() {Text = "Новаци", Value = "Новаци"},
+                    new SelectListItem() {Text = "Неготино", Value = "Крива Паланка"},
+                    new SelectListItem() {Text = "Ново Село", Value = "Ново Село"},
+                    new SelectListItem() {Text = "Охрид", Value = "Охрид"},
+                    new SelectListItem() {Text = "Петровец", Value = "Петровец"},
+                    new SelectListItem() {Text = "Пехчево", Value = "Пехчево"},
+                    new SelectListItem() {Text = "Пласница", Value = "Пласница"},
+                    new SelectListItem() {Text = "Прилеп", Value = "Прилеп"},
+                    new SelectListItem() {Text = "Пробиштип", Value = "Пробиштип"},
+                    new SelectListItem() {Text = "Радовиш", Value = "Радовиш"},
+                    new SelectListItem() {Text = "Ранковце", Value = "Ранковце"},
+                    new SelectListItem() {Text = "Ресен", Value = "Ресен"},
+                    new SelectListItem() {Text = "Росоман", Value = "Росоман"},
+                    new SelectListItem() {Text = "Сарај", Value = "Сарај"},
+                    new SelectListItem() {Text = "Свети Николе", Value = "Свети Николе"},
+                    new SelectListItem() {Text = "Сопиште", Value = "Сопиште"},
+                    new SelectListItem() {Text = "Старо Нагоричане", Value = "Старо Нагоричане"},
+                    new SelectListItem() {Text = "Струга", Value = "Струга"},
+                    new SelectListItem() {Text = "Струмица", Value = "Струмица"},
+                    new SelectListItem() {Text = "Студеничани", Value = "Студеничани"},
+                    new SelectListItem() {Text = "Теарце", Value = "Теарце"},
+                    new SelectListItem() {Text = "Тетово", Value = "Тетово"},
+                    new SelectListItem() {Text = "Центар", Value = "Центар"},
+                    new SelectListItem() {Text = "Центар Жупа", Value = "Центар Жупа"},
+                    new SelectListItem() {Text = "Чаир", Value = "Чаир"},
+                    new SelectListItem() {Text = "Чашка", Value = "Чашка"},
+                    new SelectListItem() {Text = "Чешиново-Облешево", Value = "Чешиново-Облешево"},
+                    new SelectListItem() {Text = "Чучер-Сандево", Value = "Чучер-Сандево"},
+                    new SelectListItem() {Text = "Штип", Value = "Штип"},
+                    new SelectListItem() {Text = "Шуто Оризари", Value = "Шуто Оризари"}
+
+               },
+               new { @class = "dropdown-item dropdownlista" })
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-left: -52px;">
+        <div class="form-group">
+            <div style="min-width: 780px;">
+                @Html.LabelFor(model => model.DoktorTelBroj, htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DoktorTelBroj, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DoktorTelBroj, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div style="min-width: 780px;">
+                @Html.LabelFor(model => model.DoktorEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DoktorEmail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DoktorEmail, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+    </div>
+</div>
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.Id)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaIme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaLogoUrl)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaOpstina)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaAdresa)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaRabotnoVreme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaEmail)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaTelBroj)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbKratokOpis)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbDolgOpis)
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10 dodadinazadkopce">
+                <input type="submit" value="Додади го ветеринарниот доктор" class="btn btn-success" />
+            </div>
+
+            <div class="dodadinazadkopce">
+                @Html.ActionLink("Назад кон ветеринарната станица", "/Details/" + Model.veterinarnaAmbulanta.Id, " ", new { @class= "btn btn-secondary" })
+            </div>
+        </div>
+    </div>
+}*@   
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .dropdownlista {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .createbutton, .deletebutton {
+        display: grid;
+        width: 1260px;
+        padding-top: 20px;
+    }
+
+    .nazadkopcedoktor{
+        text-decoration: none;
+        color: white;
+    }
+    .createnaslov {
+        padding-top: 20px;
+        padding-left: 36px;
+    }
+
+    form-horizontal {
+        padding-left: 36px;
+    }
+
+    .form-group {
+        width: 735px;
+    }
+
+    .izmenidoktordiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dodadinazadkopce {
+        display: grid;
+        width: 1295px;
+        padding-top: 20px;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+        margin-left: -37px;
+    }
+</style>
+
+@*
+      @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>VeterinarenDoktor</h4>
+        <hr />
+        <div>
+            @Html.LabelFor(model => model.DoktorImePrezime)
+            @Html.EditorFor(model => model.DoktorImePrezime)
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.DoktorOpstina)
+            @Html.EditorFor(model => model.DoktorOpstina)
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.DoktorEmail)
+            @Html.EditorFor(model => model.DoktorEmail)
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.DoktorTelBroj)
+            @Html.EditorFor(model => model.DoktorTelBroj)
+        </div>
+
+
+
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.Id)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaIme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaLogoUrl)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaOpstina)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaAdresa)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaRabotnoVreme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaEmail)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaTelBroj)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbKratokOpis)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbDolgOpis)
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+*@

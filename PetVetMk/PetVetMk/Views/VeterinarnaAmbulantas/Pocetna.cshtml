@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Почетна";
+}
+
+    <h1 style="padding: 25px 0px 25px 365px;">Добредојдовте на „PetVetMk“</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner img-fluid">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="~/Content/LogoCarouselTransparent.png" class="prvaslikalogo" alt="...">
+            </div>
+            <div class="carousel-item img-fluid" data-bs-interval="5000">
+                <img src="~/Content/CarouselImage2.png"  alt="...">
+            </div>
+            <div class="carousel-item img-fluid" data-bs-interval="5000">
+                <img src="~/Content/CarouselImage3.png" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 25px;">
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/Content/AboutUs.png" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">За нас</h5>
+                    <p class="card-text text" style="text-align: justify">
+                        Веб-апликацијата „PetVetMk“  претставува една современа технологија,
+                        која нуди приказ на информации поврзани за ветеринарните амбуланти во државата, како адреса и информации за контакт, 
+                        но и кадарот во нив и услуги кои тие ги нудат.
+                    </p>
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/Content/VetDoctors.png" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ветеринарни доктори</h5>
+                    <p class="card-text" style="text-align: justify">
+                        Ветеринарните доктори ќе имаат пристап до  податоците на својата ветеринарна
+                        амбуланта и истите  ќе можат да ги изменуваат по потреба, како и да имаат преглед на нивните миленици-пациенти и да 
+                        додаваат нови или пак отстранат миленици од листата.
+                    </p>
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/Content/Clients.png" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Клиенти</h5>
+                    <p class="card-text" style="text-align: justify">
+                        Клиентите ќе имаат можност да ги разгледуваат ветеринарните амбуланти низ општините во целата држава, информациите поврзани со 
+                        истите како и услугите кои тие ги нудат и да остават оценка за секоја една од ветеринарните амбуланти. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .carousel-inner > .carousel-item > img {
+        width: 896px;
+        height: 504px;
+    }
+
+    .carousel {
+        width: 896px;
+    }
+
+    .prvaslikalogo {
+        object-fit: contain;
+    }
+
+</style>
+

@@ -1,0 +1,72 @@
+﻿@model PetVetMk.Models.Milenik
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Milenik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikSopstvenik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikSopstvenik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikDataRaganje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikDataRaganje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikVid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikVid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikRasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikRasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilenikBoja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilenikBoja)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

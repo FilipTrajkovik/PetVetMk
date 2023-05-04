@@ -1,0 +1,165 @@
+﻿@model PetVetMk.Models.Milenik 
+@{
+    ViewBag.Title = "InsertNewPet";
+}
+
+<h3 class="createnaslov">Внеси ги податоците за миленикот</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="izmenimilenikdiv">
+            <div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MilenikIme, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MilenikIme, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MilenikIme, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MilenikSopstvenik, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MilenikSopstvenik, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MilenikSopstvenik, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MilenikDataRaganje, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MilenikDataRaganje, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MilenikDataRaganje, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-left: -52px;">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MilenikVid, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" style=" background-color: white;">
+                        @Html.DropDownListFor(model => model.MilenikVid, new List<SelectListItem>
+                       {
+                            new SelectListItem() {Text = "Куче", Value = "Куче"},
+                            new SelectListItem() {Text = "Маче", Value = "Маче"},
+                            new SelectListItem() {Text = "Птица", Value = "Птица"},
+                            new SelectListItem() {Text = "Зајак", Value = "Зајак"},
+                            new SelectListItem() {Text = "Риба", Value = "Риба"},
+                            new SelectListItem() {Text = "Хрчак", Value = "Хрчак"},
+                            new SelectListItem() {Text = "Морско прасе", Value = "Морско прасе"}
+                       },
+                       new { @class = "dropdown-item dropdownlista" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div style="min-width: 780px;">
+                        @Html.LabelFor(model => model.MilenikRasa, htmlAttributes: new { @class = "control-label col-md-2" })
+                    </div>
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MilenikRasa, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MilenikRasa, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div style="min-width: 780px;">
+                        @Html.LabelFor(model => model.MilenikBoja, htmlAttributes: new { @class = "control-label col-md-2" })
+                    </div>
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MilenikBoja, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MilenikBoja, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.Id)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaIme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaLogoUrl)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaOpstina)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaAdresa)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaRabotnoVreme)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaEmail)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbulantaTelBroj)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbKratokOpis)
+        @Html.HiddenFor(model => model.veterinarnaAmbulanta.VetAmbDolgOpis)
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10 dodadinazadkopce">
+            <input type="submit" value="Додади го миленикот" class="btn btn-success" />
+        </div>
+
+        <div class="dodadinazadkopce">
+            @Html.ActionLink("Назад кон ветеринарната станица", "/Details/" + Model.veterinarnaAmbulanta.Id, " ", new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .dropdownlista {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .createbutton, .deletebutton {
+        display: grid;
+        width: 1260px;
+        padding-top: 20px;
+    }
+
+    .nazadkopcedoktor {
+        text-decoration: none;
+        color: white;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+        padding-left: 36px;
+    }
+
+    form-horizontal {
+        padding-left: 36px;
+    }
+
+    .form-group {
+        width: 735px;
+    }
+
+    .izmenimilenikdiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dodadinazadkopce {
+        display: grid;
+        width: 1295px;
+        padding-top: 20px;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+        margin-left: -37px;
+    }
+</style>

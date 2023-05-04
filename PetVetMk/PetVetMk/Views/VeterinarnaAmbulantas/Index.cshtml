@@ -1,0 +1,195 @@
+﻿@model PagedList.IPagedList<PetVetMk.Models.VeterinarnaAmbulanta>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Ветеринарни амбуланти";
+}
+
+@if (User.IsInRole("Administrator"))
+ {
+    <p style="padding-left: 34px; padding-top: 16px;">
+        @Html.ActionLink("Додани ветеринарна амбуланта", "Create", "", new { @class = "btn btn-info" })
+    </p>
+ }
+
+
+<div class="container">
+    @using (Html.BeginForm("Index", "VeterinarnaAmbulantas", FormMethod.Get))
+    {
+        <p style="margin-top: 20px;" class="w-25">
+            @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "search-box form-control", @placeholder = "Пребарај" })
+        </p>
+
+
+    }
+    <div class="card-group vgr-cards">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="border: 2px solid lightgray; border-radius: 10px;">
+                <div class="card-img-body">
+                    <img class="card-img" src="@item.VetAmbulantaLogoUrl" style="max-width:300px">
+                </div>
+                <div class="card-body" style="padding: 15px;">
+                    <h4 class="card-title">@item.VetAmbulantaIme</h4>
+                    <h4 class="card-title">Општина : @item.VetAmbulantaOpstina</h4>
+                    <p class="card-text"> @item.VetAmbKratokOpis</p>
+                    <div class="buttons">
+                        @Html.ActionLink("Погледни детално", "Details", new { id = item.Id }, new { @class = "btn btn-secondary" })
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            @Html.ActionLink("Измени", "Edit", new { id = item.Id }, new { @class = "btn btn-secondary" })
+                            @*@Html.ActionLink("Избриши", "Delete", new { id = item.Id }, new { @class = "btn btn-secondary" })*@
+                            <a class="ambulanta-delete btn btn-secondary" ambulanta-id="@item.Id">Избриши</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+    <div id="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.currentFilter }))
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $(".ambulanta-delete").on("click", function () {
+                var button = $(this);
+                bootbox.confirm("Дали сте сигурни дека сакате да ја избришете ветеринарната амбуланта?", function (result) {
+                    console.log(result)
+                    if (result) {
+                        $.ajax({
+                            url: "/VeterinarnaAmbulantas/Delete/" + button.attr("ambulanta-id"),
+                            method: "GET",
+                            success: function () {
+
+                            },
+                            error: function (err) {
+                                console.log(err);
+                            }
+                        });
+                        $(document).ajaxStop(function () {
+                            window.location.reload();
+                        });
+                    }
+                });
+            });
+        });
+    </script> 
+}
+
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .buttons {
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+    }
+
+    .card {
+        border: none;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: #6E8898FF;
+    }
+
+    .card-img {
+        border-radius: 0;
+        width: 100px;
+        height: 200px;
+        border-style: double;
+    }
+
+    .vgr-cards .card {
+        display: flex;
+        flex-flow: wrap;
+        flex: 100%;
+        margin-bottom: 40px;
+    }
+
+     .vgr-cards .card:nth-child(even) .card-img-body {
+          order: 2;
+      }
+
+      .vgr-cards .card:nth-child(even) .card-body {
+          padding-left: 0;
+          padding-right: 1.25rem;
+      }
+
+    .vgr-cards .card-img-body {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        top: 7%;
+    }
+
+    .vgr-cards .card-img {
+        width: auto;
+        max-height: 230px;
+        max-width: 266px !important;
+        height: auto;
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .vgr-cards .card-body {
+        flex: 2;
+        padding: 0 0 0 1.25rem;
+    }
+
+    .card-text {
+        text-align: justify;
+    }
+
+    #pagination {
+        margin: auto;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    ul.pagination li a:hover {
+        color: white;
+        background: #20B2AA;
+    }
+
+    ul.pagination li a {
+        color: white;
+        background: #48D1CC;
+        border: none;
+        margin-left: 5px;
+    }
+
+    ul.pagination .active a:hover {
+        color: white;
+        background: #2F4F4F;
+        cursor: pointer;
+    }
+
+    ul.pagination .active a {
+        color: white;
+        background: #008080;
+    }
+
+    .close {
+        display: none !important;
+    }
+
+    .modal-content {
+        background-color: lightgray;
+    }
+
+    .modal-footer{
+        border-top: 1px solid black;
+    }
+</style>
+
+

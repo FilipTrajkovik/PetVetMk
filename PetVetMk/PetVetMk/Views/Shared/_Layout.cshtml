@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/tabIcon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>PetVetMk - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/datatables.min.css" />
+
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Veterinarni Doktori", "Index", "VeterinarenDoktors")</li>
+                        <li>@Html.ActionLink("Milenici", "Index", "Mileniks")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>*@
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2E5266FF">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 70px; padding-top: 25px">
+                    <li class="nav-item">
+                        @Html.ActionLink(" ", "Pocetna", new { Controller = "VeterinarnaAmbulantas" }, new { @class = "LogoProekt" })
+                    </li>
+
+                    <li class="nav-item" style="padding-top: 6px;">
+                        @Html.ActionLink("Ветеринарни амбуланти", "Index", new { Controller = "VeterinarnaAmbulantas" }, new { @class = "btn btn-info" })
+                    </li>
+
+                    @if(User.IsInRole("Administrator"))
+                         {
+                            <li class="nav-item" style="padding-top: 6px; margin-left: 10px;">
+                                @Html.ActionLink("Уреди улоги", "AddUserToRole", new { Controller = "Account" }, new { @class = "btn btn-info" })
+                            </li>
+                         }
+                </ul>
+                <div style="padding-right: 95px;">
+                    @Html.Partial("_LoginPartial")
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer style="background-color: #9FB1BCFF; margin-top: 35px;">
+        <section>
+            <div style="display: flex; margin-left: 167px;">
+                <div style="color: #008080; padding-right: 375px;">
+                    <h3>Контакт емаил</h3>
+                    <hr style="width: 107px; background-color: #006400; height: 4px; margin-left: 50px; margin-top: -1px;" />
+                    <div style="margin-top: -15px;">
+                        <h5>petvetmk@yahoo.com</h5>
+                        <h5>petvetmk@gmail.com</h5>
+                    </div>
+                </div>
+                <div style="color: #008080; padding-right: 225px;">
+                    <h3 style="width: 300px;">Контакт телефон</h3>
+                    <hr style="width: 107px; background-color: #006400; height: 4px; margin-left: 54px; margin-top: -1px;" />
+                    <div style="margin-top: -15px; margin-left: 58px;">
+                        <h5>021234567</h5>
+                        <h5>021231231</h5>
+                    </div>
+                </div>
+                <div style="color: #008080;">
+                    <h3 >Социјални мрежи</h3>
+                    <hr style="width: 107px; background-color: #006400; height: 4px; margin-left: 70px; margin-top: -1px;" />
+                    <ul class="text-right socialmedialist">
+                        <li class="socialm"><a href=""><img src="~/Content/facebooklogo.png" class="socmedfb"></a></li>
+                        <li class="socialm"><a href=""><img src="~/Content/instagramlogo.png" class="socmedig"></a></li>
+                        <li class="socialm"><a href=""><img src="~/Content/twitterlogo.png" class="socmedtt"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-3" style="background-color: #D3D0CBFF; color: #008080;">
+            © 2022 Filip Trajkovik
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <style>
+        .LogoProekt {
+            background-image: url("/Content/LogoNavBar.png");
+            margin-top: 10px;
+            margin-right: 10px;
+            width: 52px !important;
+            height: 54px !important;
+            background-size: contain;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            margin-top: -21px;
+            padding-left: 85px;
+            padding-right: 85px;
+            height: 75px;
+        }
+
+        .socmedfb {
+            height: 35px;
+            width: 35px;
+            margin-left: -10px;
+            margin-top: -7px;
+        }
+
+        .socmedig {
+            height: 33px;
+            width: 33px;
+            margin-top: -6px;
+        }
+
+        .socmedtt {
+            height: 48px;
+            width: 48px;
+            margin-top: -12px;
+        }
+
+        .socialm {
+            padding-left: 61px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: -15px;
+            margin-left: -77px;
+        }
+
+        .socialmedialist {
+            display: inline-flex;
+        }
+
+        .body-content{
+            min-height: 69vh;
+        }
+    </style>
+    <script type="text/javascript" src="~/Content/datatables.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿@model PetVetMk.Models.AddToRoleModel
+@{
+    ViewBag.Title = "AddUserToRole";
+}
+
+<h3 class="createnaslov">Додади корисник со следниот емаил на улога :</h3>
+
+@using (Html.BeginForm("AddUserToRole", "Account"))
+{
+    <div class="form-group">
+        @*@Html.LabelFor(z=>z.Email)
+            @Html.TextBoxFor(m=>Model.Email, new { @class="form-control"})*@
+        @Html.DropDownListFor(m => m.Email, new SelectList(Model.Emails), new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.DropDownListFor(z => z.SelectedRole, new SelectList(Model.Roles), new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-secondary" style="margin-top: 20px;">Зачувај промена</button>
+}
+
+@Html.Action("ListUsers", "Manage")
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+    }
+
+    .form-group {
+        padding-top: 20px;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#tabelaulogi").DataTable({
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Не е внесен ниту една улога",
+                    "info": "Прикажани се од _START_. до _END_. од вкупно _TOTAL_ улоги",
+                    "infoEmpty": "Прикажани се од _START_. до _END_. од вкупно _TOTAL_ улоги",
+                    "infoFiltered": "(филтрирани од _MAX_ улоги)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Прикажани се _MENU_ улоги",
+                    "loadingRecords": "Се вчитуваат...",
+                    "processing": "",
+                    "search": "Пребарај улоги/кориснички сметки:",
+                    "zeroRecords": "Не се пронајдени улоги/кориснички сметки",
+                    "paginate": {
+                        "first": "Прва",
+                        "last": "Последна",
+                        "next": "Следна",
+                        "previous": "Претходна"
+                    },
+                    "aria": {
+                        "sortAscending": ": подреди ги по растечки редослед",
+                        "sortDescending": ":  подреди ги по опаѓачки редослед"
+                    }
+                }
+            });
+        });
+    </script>
+}

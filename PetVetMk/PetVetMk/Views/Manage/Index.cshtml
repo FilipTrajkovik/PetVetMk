@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNet.Identity
+@model PetVetMk.Models.IndexViewModel
+@{
+    ViewBag.Title = "Поставки";
+}
+
+<h3 class="createnaslov">@ViewBag.Title</h3>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Променете ги поставките за вашата сметка</h4>
+    <hr />
+    <div class="dl-horizontal changepassword">
+        <div class="border border-5 changepasswordleft">
+            <p class="changepasslefttext">Најавен е корисникот : <b>@User.Identity.GetUserName()</b></p>
+            <span class="changepasslefttext">
+                @if (Model.HasPassword)
+                {
+                    @Html.ActionLink("Променете ја вашата лозинка", "ChangePassword", "Manage", new { @class = "btn btn-info", @style="width: 95%;" })
+                }
+                else
+                {
+                    @Html.ActionLink("Create", "SetPassword")
+                }
+            </span>
+        </div>
+
+        <div>
+            <img src="~/Content/LogoCarouselTransparent.png" style="width:631px; height:260px; margin-left: -70px; margin-top: 20px;" />
+        </div>
+
+    </div>
+</div>
+
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+    }
+
+    .changepassword {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .changepasswordleft {
+        margin: auto 10% auto auto;
+        background-color: #9FB1BCFF;
+        width: 650px;
+        height: 230px;
+        margin-top: 35px;
+    }
+
+    .changepasslefttext {
+        padding: 40px 0px 17px 15px;
+        font-size: x-large;
+    }
+</style>

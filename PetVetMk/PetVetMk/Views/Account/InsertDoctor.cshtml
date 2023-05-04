@@ -1,0 +1,61 @@
+﻿@model PetVetMk.Models.AddDoctorModel
+@{
+    ViewBag.Title = "Додади ветеринарен доктор";
+}
+
+<h3 class="createnaslov">@ViewBag.Title</h3>
+<hr />
+
+@using (Html.BeginForm("InsertDoctor", "Account"))
+{
+    <div class="insertdoctor">
+        <div>
+            <div class="form-group border border-5 dodadidoktor">
+                <span>
+                    <p class="doktortext">Одберете ветеринарен доктор кој сакате да го додадете на оваа ветеринарна станица</p>
+                </span>
+                <span>
+                    @Html.DropDownListFor(m => m.Email, new SelectList(Model.Emails), new { @class = "form-control", @style = "width: 95%; margin-left: 15px;" })
+                </span>
+                <span>
+                    <button type="submit" class="btn btn-secondary" style="margin-top: 20px; width: 95%; margin-left: 15px;">Додади ветеринарен доктор</button>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <img src="~/Content/LogoCarouselTransparent.png" style="width:631px; height:260px; margin-left: -70px; margin-top: 20px;" />
+        </div>
+    </div>
+    @Html.HiddenFor(m => m.AmbulanceId)
+}
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+
+    .createnaslov {
+        padding-top: 20px;
+    }
+
+    .insertdoctor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dodadidoktor {
+        margin: auto 10% auto auto;
+        background-color: #9FB1BCFF;
+        width: 650px;
+        height: 230px;
+        margin-top: 35px;
+    }
+
+    .doktortext {
+        padding: 20px 5px 17px 5px;
+        font-size: large;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>

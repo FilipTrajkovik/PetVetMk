@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PetVetMk.Models.UsersInRoleViewModel>
+
+<h3 class="createnaslov">Листа на корисници</h3>
+<table class="table table-hover table-light table-striped" style="margin-top: 10px;" id="tabelaulogi">
+    <thead>
+        <tr>
+            <th scope="col">Емаил</th>
+            <th scope="col">Улога </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var korisnici in Model)
+        {
+            <tr>
+                <td class="align-middle">@korisnici.Email</td>
+                <td class="align-middle">@korisnici.RoleName </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

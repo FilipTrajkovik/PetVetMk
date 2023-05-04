@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNet.Identity
+@using PetVetMk.Models
+@{ 
+    ApplicationDbContext db = new ApplicationDbContext();
+    var user = db.Users.Find(User.Identity.GetUserId());
+}
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li style="padding-top: 16px; margin-right: 10px;" class="btn btn-outline-info">
+            @Html.ActionLink("Здраво " + user.ImePrezime + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class="hellouser" })
+        </li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-info" style="padding-top: 15px;">Одјави се</a></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li style="padding-top: 15px;">@Html.ActionLink("Регистрирај се", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class="btn btn-info" })</li>
+        <li style="padding-top: 15px; padding-left: 10px; margin-right: -20px;">@Html.ActionLink("Најави се", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-info" })</li>
+    </ul>
+}
+
+<style>
+    .hellouser{
+        text-decoration: none;
+        color: white;
+    }
+
+    .hellouser:hover{
+        text-decoration: none;
+        color: black;
+    }
+</style>
